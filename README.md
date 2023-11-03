@@ -81,7 +81,7 @@ image 회색 처음 버튼
 
 <h1>스크린샷</h1>
 
-![Alt text](image.png)
+![스크린샷 2023-11-04 023339](https://github.com/Taewook1212/home-work/assets/147236247/fbf14ba9-151d-45d7-9f49-98562ff4a1df)
 
 <h1>어려웠던 부분</h1>
 
