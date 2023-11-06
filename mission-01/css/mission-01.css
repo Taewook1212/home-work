@@ -1,0 +1,183 @@
+:root {
+  /* App Colors */
+  --color-text: var(--color-white);
+  --color-gray-100: var(--color-gray100);
+  --color-gray-500: var(--color-gray500);
+  --color-gray-555: var(--color-gray555);
+  --color-gray-800: var(--color-gray800);
+  --color-blue-600: var(--color-blue600);
+
+  /* Color */
+  --color-white: #ffffff;
+  --color-gray100: #f3f3f3;
+  --color-gray500: #c4c4c4;
+  --color-gray800: #4e4e4e;
+  --color-gray555: #555555;
+  --color-blue600: #0074e9;
+
+  --size-total-hegiht: 630px;
+  --size-min-width: 502px;
+  --size-min-hegiht: 310px;
+}
+
+h1,
+h2,
+div,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+/* 위 음료  */
+/* 꿀차 */
+
+.container {
+  height: var(--size-total-hegiht);
+  width: var(--size-min-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.top__container {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-500);
+
+  height: var(--size-min-hegiht);
+  width: var(--size-min-width);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 28px;
+}
+
+.ottogi__button,
+.bori__button,
+.kamill__button {
+  position: absolute;
+}
+
+.top__left {
+  text-align: center;
+  transform: translateY(-30px);
+}
+
+.top__right {
+  transform: translateX(10px);
+}
+
+.ottogi__logo {
+  margin: 13px;
+}
+
+.ottogi__title {
+  color: var(--color-gray800);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.ottogi__button {
+  bottom: 20px;
+  left: 20px;
+}
+
+/* 아래 음료 */
+.bottom__container {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0 0 0;
+  min-width: var(--size-min-width);
+  min-height: var(--size-min-hegiht);
+}
+
+/* 왼쪽 Kamill 음료*/
+
+.kamill {
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-500);
+  margin: 0 10px 0 0;
+  width: 243px;
+  text-align: center;
+  padding: 10px;
+}
+
+.kamill__title {
+  color: var(--color-gray555);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 10px 0 7px 0;
+}
+
+.kamill__button {
+  bottom: 20px;
+  left: 20px;
+}
+
+.button {
+  position: absolute;
+  display: inline-flex;
+  padding: 12px 18px 13px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  opacity: 0;
+}
+
+.kamill__button:active {
+  .button {
+    background: var(--blue-600, #0074e9);
+    opacity: 100;
+  }
+}
+
+/* 오른쪽 오뚜기 보리차 */
+
+.bori {
+  text-align: center;
+  position: relative;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-500);
+  margin: 0 0 0 5px;
+  width: 243px;
+  padding: 10px;
+}
+
+.bori__title {
+  color: var(--color-gray555);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 10px 0 7px 0;
+}
+
+.bori__button {
+  bottom: 20px;
+  left: 20px;
+}
