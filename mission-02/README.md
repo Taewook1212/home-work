@@ -25,7 +25,13 @@
 
       /* 유효성 검사 못함 */
      
+
+    로그인 input태그에 애니메이션을 넣기 위해 div태그도 같이 넣었다.
+    input 요소안에는 가상요소를 못 넣는 단점 발견
+    
+    
    
 4. 스크린샷
 
 ![image](https://github.com/Taewook1212/home-work/assets/147236247/6e2ed949-54f4-459d-ad5a-5ff65b898a15)
+
