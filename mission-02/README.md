@@ -2,9 +2,9 @@
 
     마크업구조
 
-    ![image](https://github.com/Taewook1212/home-work/assets/147236247/c5b3c2b8-acfd-4531-b12e-c174a0179092)
+    
 
-   
+   ![image](https://github.com/Taewook1212/home-work/assets/147236247/c5b3c2b8-acfd-4531-b12e-c174a0179092)
 
 
 <H1>2. CSS 구조 </H1>
