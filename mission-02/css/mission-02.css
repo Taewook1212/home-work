@@ -107,26 +107,72 @@ input::placeholder {
 
 .input-box {
   position: relative;
-}
-
-/* placeholder 텍스트가 '보이는 상태인지 아닌지' 체크할 수 있는 가상클래스 이다. placeholder text가 보이는 상태라면 */
-input:placeholder-shown + label {
-  font-size: 18px;
-  top: 40px;
-}
-
-input:focus {
-  /* outline: none; */
-}
-
-input:focus + label,
-div > label {
-  font-size: 13px;
-  pointer-events: none;
-  position: absolute;
-  left: 0px;
-  top: 10px;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
   transition: all 0.2s ease;
+}
+
+.input-box .email-label,
+.input-box .password-label {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: 16px;
+  color: var(--color-text);
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate(0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+input:focus + .email-label,
+input:focus + .password-label,
+input:not(:placeholder-shown) + .email-label,
+input:not(:placeholder-shown) + .password-label {
+  /* border: 1px solid blue; */
+  transform: translate(-8px, -20px);
+  scale: 0.8;
+}
+
+/* 유효성 검사 */
+
+input[type='email']:valid {
+  background-image: url('../image/success.png');
+  background-size: auto;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+input[type='email']:invalid:not(:placeholder-shown) {
+  background-image: url('../image/warning.png');
+  background-size: auto;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+input[type='password']:valid {
+  background-image: url('../image/success.png');
+  background-size: auto;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+input[type='password']:invalid:not(:placeholder-shown) {
+  background-image: url('../image/warning.png');
+  background-size: auto;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+}
+
+/* ㅠㅠㅠㅠㅠㅠㅠ 이거 왜 안나오냐.. ㅠㅠㅠㅠㅠㅠㅠㅠㅠ  */
+input[type='email']::after {
+  content: '이메일 입력 방법이 잘못되었습니다.(예:user@domain.io)';
+  width: 100px;
+  height: 100px;
+  font-size: 100px;
+  top: 50%;
+  display: inline-block;
 }
 
 /* 로그인, 회원가입 버튼 */
@@ -161,38 +207,6 @@ input[type='submit'] {
   letter-spacing: -0.4px;
   border-radius: 8px;
   border: 1px solid var(--unnamed, #f5f5f5);
-}
-
-/* 유효성 검사 */
-
-.succeccIcon,
-.warningIcon {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  display: none;
-}
-
-input:invalid + .warningIcon {
-  display: inline-block;
-}
-
-input:placeholder-shown {
-  font-size: 18px;
-  top: 40px;
-}
-
-.submit::after {
-  content: 'dsfdsdf';
-  width: 10px;
-  height: 10px;
-}
-
-.signin::after {
-  content: '';
-  width: 100px;
-  height: 100px;
-  background: no-repeat center url(../image/arrowSign.png);
 }
 
 @media only screen and (min-width: 700px) {
