@@ -13,25 +13,30 @@
    1)주요 선택자 구분
 
        
-     .login 상단 로그인 글자 부분
 
-     .login-form 로그인 입력란 부
+
+     .login-form 로그인 입력란 부분
 
      :placeholder-shown
-     /* placeholder 텍스트가 '보이는 상태인지 아닌지' 체크할 수 있는 가상클래스.*/
+     /* placeholder 입력 상태인지 확인 체크할 수 있는 가상클래스.
+     :not(:placeholder-shown) 입력상태가 아닐때 */
      (이 애니메이션을 넣으려다 시간을 다 잡아먹음)
 
      .signin-up 로그인, 회원가입 버튼 
 
-      /* 유효성 검사 못함 */
-     
+      /* 유효성 검사  */
+         마크표시는 했지만 
+         input 아랫줄에 긴 글? 은 미표시..
 
     로그인 input태그에 애니메이션을 넣기 위해 div태그도 같이 넣었다.
-    input 요소안에는 가상요소를 못 넣는 단점 발견
+
     
     
    
 4. 스크린샷
 
-![image](https://github.com/Taewook1212/home-work/assets/147236247/6e2ed949-54f4-459d-ad5a-5ff65b898a15)
+![image](https://github.com/Taewook1212/home-work/assets/147236247/c555ff68-9541-4927-8ded-56ac034e2e6e)
+![image](https://github.com/Taewook1212/home-work/assets/147236247/7b25dea1-454c-48f4-8bdb-31174114ccfb)
+![image](https://github.com/Taewook1212/home-work/assets/147236247/b8f50342-d65b-4f18-b93e-23aeebd685e0)
+
 
