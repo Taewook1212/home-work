@@ -8,45 +8,48 @@
   </head>
   <body>
     <div class="container">
-      <section class="login">
-        <h1>로그인</h1>
-        <span>Welcome, Ediya Coffee</span>
-        <p>이디야커피에 오신 것을 환영합니다.</p>
-      </section>
-      <div class="main">
-        <form class="login-form" action="#" name="login" method="post">
-          <div class="input-box a">
-            <input
-              type="email"
-              name="userEmail"
-              placeholder="이메일"
-              required
-              autocomplete="off"
-              style="color: #fefefe"
-            />
-            <label class="email-label" for="email">이메일</label>
-          </div>
-          <div class="input-box b">
-            <input
-              type="password"
-              name="password"
-              placeholder="패스워드"
-              required
-              autocomplete="off"
-              style="color: #fefefe"
-            />
-            <label class="password-label" for="password">패스워드</label>
-          </div>
-          <label for="remember-check">
-            <input id="remember-check" type="checkbox" name="checkbox" />이메일
-            저장</label
-          >
-          <div class="signin-up">
-            <input type="submit" value="로그인" />
-            <a href="#" class="signin">회원가입</a>
-          </div>
-        </form>
-      </div>
+      <h1 class="login-title">로그인</h1>
+      <p class="login-en">Welcome, Ediya Coffee</p>
+      <p class="login-ko">이디야커피에 오신 것을 환영합니다.</p>
+
+      <form class="login-form" action="#" name="login" method="post">
+        <div class="input-box a">
+          <img class="succeccIcon" src="image/success.png" alt="" />
+          <img class="warningIcon" src="image/warning.png" alt="" />
+
+          <input
+            type="email"
+            name="userEmail"
+            placeholder="이메일"
+            required
+            autocomplete="off"
+            style="color: #fefefe"
+          />
+
+          <!-- <span class="icon"></span> -->
+          <label class="email-label" for="email">이메일</label>
+        </div>
+        <div class="input-box b">
+          <input
+            type="password"
+            name="password"
+            placeholder="패스워드"
+            required
+            autocomplete="off"
+            style="color: #fefefe"
+          />
+
+          <label class="password-label" for="password">패스워드</label>
+        </div>
+        <label for="remember-check">
+          <input id="remember-check" type="checkbox" name="checkbox" />이메일
+          저장</label
+        >
+        <div class="signin-up">
+          <input type="submit" value="로그인" />
+          <a href="#" class="signin">회원가입</a>
+        </div>
+      </form>
     </div>
   </body>
 </html>
