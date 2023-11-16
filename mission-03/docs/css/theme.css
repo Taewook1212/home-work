@@ -1,6 +1,7 @@
 :root {
   /* Coolor styles*/
   --white: #ffffff;
+  --black: black;
   --primary-red-1: #e50914;
   --primary-red-2: #b70710;
   --primary-red-3: #b70710;
@@ -9,6 +10,8 @@
   --grayscale-light-gray: #acacac;
   --grayscale-dark-gray: #2f2f2f;
   --grayscale-snow: #e3e3e3;
+  --grayscale-dark-snow: #c8c8c8;
+  --grayscale-light-snow: #919191;
 
   /* Text-size styles */
   /* base size 16px */
