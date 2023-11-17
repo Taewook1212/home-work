@@ -50,7 +50,7 @@
   height: auto;
 }
 
-.button-arrow-rectangle {
+.button-arrow-elliptical {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -65,7 +65,7 @@
   gap: 0.625em;
 }
 
-.button-arrow-elliptical {
+.button-arrow-rectangle {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

@@ -1,0 +1,72 @@
+.background-container {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 80%, #000 100%),
+    url('/images/sprite/background.svg'), lightgray 50% / cover no-repeat;
+  border-bottom: 1px solid var(--grayscale-dark-gray);
+}
+
+.header-container {
+  background: var(
+    --gradients-100,
+    linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%)
+  );
+}
+
+.main-container {
+  /* padding: 3.5625em 15em; */
+  padding: 4.8125em 15em 14.5em 15em;
+  /* margin-top: 1.25em;
+  margin-bottom: 10.9375em; */
+  /* 77 232 */
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: var(--white);
+}
+
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.75em;
+  align-items: center;
+  padding: 0 14.0625em;
+}
+.main-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.main-subTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+
+.form-email {
+  width: 100%;
+  display: flex;
+  /* flex-flow: row nowrap; */
+  /* margin: 1.75em 0; */
+  /* padding: 1.75em 14.0625em; */
+  /* 14.0625em */
+}
+
+.main-email {
+  width: 100%;
+}
+
+.form-email input.main-email::placeholder {
+  position: relative;
+  left: 1.25em;
+}
+
+.main-discription {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
