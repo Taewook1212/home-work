@@ -46,16 +46,16 @@
   1. components directory
      * buttons
        - index.css
-          -> d
+        -  d
      * footer
        - index.css
-         -> d
+        - d
      * header
        - index.css
-         -> d
+        - d
      * logo
        - index.css
-         -> d
+        - d
    
   2. css directory
      - components.css
