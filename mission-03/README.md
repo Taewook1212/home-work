@@ -36,11 +36,11 @@
 <h1>3. HTML Markup</h1>
  <details>
   <center><img src="https://github.com/Taewook1212/home-work/assets/147236247/a29d43c6-c1db-4e31-aa96-54680bf836ae.png" width="500" height="500"/></center>
-
+<img src="https://github.com/Taewook1212/home-work/assets/147236247/379dd010-4f17-4ecc-82e7-cfc7a01dab74" width="500" height="500"/> 
  </details>
 
 
-<img src="https://github.com/Taewook1212/home-work/assets/147236247/379dd010-4f17-4ecc-82e7-cfc7a01dab74" width="500" height="500"/> 
+
 <h1>4. CSS</h1>
 
 
