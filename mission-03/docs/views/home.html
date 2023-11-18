@@ -11,59 +11,78 @@
     <div class="background-container">
       <!-- header -->
       <div class="header-container">
-        <div class="header-logo">
-          <a href="#">
-            <img src="/images/sprite/Logo.svg" class="logo-xl" alt="" />
-          </a>
-          <img src="/images/sprite/Logo-mobile.svg" class="logo-small" alt="" />
-        </div>
-        <div class="header-menu">
-          <form class="select-language" action="#" method="post">
-            <label for="language">
-              <select
-                class="button-select button"
-                name="language"
-                id="language"
-              >
-                <option selected>한국어</option>
-                <option value="english">English</option>
-              </select>
-            </label>
-          </form>
-          <div role="button">
-            <a class="button-login button-bg button" href="#">로그인 </a>
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="#">
+              <img src="/images/sprite/Logo.svg" class="logo-xl" alt="" />
+            </a>
+            <img
+              src="/images/sprite/Logo-mobile.svg"
+              class="logo-small"
+              alt=""
+            />
+          </div>
+          <div class="header-menu">
+            <form class="select-language" action="#" method="post">
+              <label for="language">
+                <select
+                  class="button-select button"
+                  name="language"
+                  id="language"
+                >
+                  <option selected>한국어</option>
+                  <option value="english">English</option>
+                </select>
+              </label>
+            </form>
+            <div role="button">
+              <a class="button-login button-bg button" href="#">로그인 </a>
+            </div>
           </div>
         </div>
       </div>
       <!-- home -->
       <div class="main-container">
         <div class="main-wrapper">
-          <p class="main-title">
-            영화, TV 프로그램을<br />
-            무제한으로.
-          </p>
-          <p class="main-subTitle">
-            다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.
-          </p>
-          <p class="main-discription">
-            시청할 준비가 되셨나요? 멤버십을 등록하거나 <br />재시작하려면
-            이메일 주소를 입력하세요.
-          </p>
-          <form action="submit" method="get" class="form-email">
+          <div class="main-title">
+            <p>영화, TV 프로그램을</p>
+            <p>무제한으로.</p>
+          </div>
+          <div class="main-subTitle">
+            <p>다양한 디바이스에서 시청하세요.</p>
+            <p>언제든 해지하실 수 있습니다.</p>
+          </div>
+          <div class="main-discription">
+            <p>시청할 준비가 되셨나요? 멤버십을 등록하거나</p>
+            <p>재시작하려면 이메일 주소를 입력하세요.</p>
+          </div>
+          <form action="submit" method="get" class="form-email-desk">
             <label for="email"> </label>
             <input
-              class="main-email"
+              class="main-email-desk"
               id="email"
               type="text"
               name="email"
               placeholder="이메일을 입력해주세요."
             />
 
-            <a href="#" class="button-arrow-elliptical button-bg button">
-              30일 무료 이용
-              <svg width="23" height="16" viewBox="0 0 23 16">
-                <use href="/images/sprite/_sprite.svg#Arrow-Stroke" />
-              </svg>
+            <a class="button-arrow-elliptical button-bg button" href="#"
+              >30일 무료 이용
+              <img src="/images/sprite/Arrow-right.png" alt="" />
+            </a>
+          </form>
+          <form action="submit" method="get" class="form-email-mobile">
+            <label for="email"> </label>
+            <input
+              class="main-email-mobile"
+              id="email"
+              type="text"
+              name="email"
+              placeholder="이메일을 입력해주세요."
+            />
+            <a class="button-arrow-rectangle button-bg button" href="#"
+              >30일 무료 이용
+              <img src="/images/sprite/Arrow-right.png" alt="" />
             </a>
           </form>
           <p class="main-discription">
@@ -75,7 +94,10 @@
     <!-- footer -->
     <div class="footer-container">
       <div class="footer-wrapper">
-        <p><em>질문이 있으신가요? 문의전화: 00-308-321-0058</em></p>
+        <div class="footer-question">
+          <p><em>질문이 있으신가요?</em></p>
+          <p><em>문의전화: 00-308-321-0058</em></p>
+        </div>
         <nav>
           <ul class="footer-list">
             <li><a href="">자주 묻는 질문</a></li>

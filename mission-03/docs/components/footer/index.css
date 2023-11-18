@@ -1,20 +1,28 @@
 .footer-container {
-  padding: 3.125em 4.375em;
+  padding: 3.125em 0;
   background-color: var(--black);
+  display: flex;
+  justify-content: center;
 }
 
 .footer-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  gap: 3.125em;
+  gap: 3.125rem;
+  align-items: left;
+  width: 80%;
 }
 
-.footer-wrapper p {
+.footer-question {
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
   color: var(--grayscale-dark-snow);
   font-weight: 700;
   line-height: 1.5;
   font-size: 1.25rem;
 }
+
 .footer-address p {
   font-size: 1.25rem;
   font-weight: 700;
@@ -52,59 +60,37 @@
     grid-template-columns: repeat(3, 12.8125em);
     grid-template-rows: repeat(5, 1.1875em);
   }
-  @media (max-width: 860px) {
-    .footer-list {
-      grid-template-columns: repeat(2, 12.8125em);
-      grid-template-rows: repeat(8, 1.1875em);
-    }
-  }
-
-  @media (max-width: 550px) {
-    .footer-container {
-      padding: 1.5625em 2.5em;
-    }
-  }
-  /* @media (max-width: 350px) {
-    .footer-container {
-      padding: 1.5625em 2.5em;
-    }
-
-    .footer-list {
-      font-size: 0.575rem;
-      row-gap: 0.325em;
-      column-gap: 0;
-      color: var(--grayscale-light-gray);
-    }
-  } */
-
-  @container (min-width: 320px) {
-    .footer-list {
-      grid-template-columns: repeat(2, 12.8125em);
-      grid-template-rows: repeat(8, 1.1875em);
-
-      font-size: 0.875rem;
-      row-gap: 0.625em;
-      column-gap: 0;
-      color: var(--grayscale-light-gray);
-    }
-  }
 }
-/* 
-@media (max-width: 767px) {
-  @container (min-width: 320px) {
-    .guide {
-      width: 344px;
-    }
+@media (max-width: 860px) {
+  .footer-list {
+    grid-template-columns: repeat(2, 12.8125em);
+    grid-template-rows: repeat(8, 1.1875em);
   }
 }
 
-@media (min-width: 768px) {
-  .guide {
-    flex-wrap: nowrap;
-    width: clamp(650px, 84.635%, 800px);
+@media (max-width: 550px) {
+  .footer-container {
+    padding: 1.5625em 2.5em;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 375px) {
+  .footer-wrapper {
+    width: 99%;
+    gap: 2.125rem;
+  }
+  .footer-question {
+    flex-flow: column nowrap;
   }
 
-  .address {
-    width: clamp(610px, 79.427%, 800px);
+  .footer-list {
+    grid-template-columns: repeat(2, 12.8125em);
+    grid-template-rows: repeat(8, 1.1875em);
+
+    font-size: 0.875rem;
+    row-gap: 0.625em;
+    column-gap: 0;
+    color: var(--grayscale-light-gray);
   }
-} */
+}
