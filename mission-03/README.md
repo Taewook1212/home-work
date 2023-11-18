@@ -43,4 +43,16 @@
 
 <h1>4. CSS</h1>
 
-
+  1. components directory
+     * buttons
+       - index.css
+     * footer
+       - index.css
+     * header
+     * logo
+   
+  2. css directory
+     - components.css
+     - home.css
+     - reset.css
+     - style.css
