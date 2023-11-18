@@ -46,20 +46,23 @@
   1. components directory
      * buttons
        - index.css
-         -  .button-container .button-wrapper .button-none  .button .button-bg  .button-bg:hover .button-bg:focus .button-login .button-arrow-elliptical .button-arrow-rectangle .button-select .form-email-desk input.main-email-desk::placeholder,
-.form-email-mobile input.main-email-mobile::placeholder  .form-email-desk .main-email-mobile
      * footer
        - index.css
-         - d
+         - @media (max-width: 1100px)
+         - @media (max-width: 860px)
+         - @media (max-width: 550px)
+         - @media (max-width: 375px)
      * h eader
        - index.css
-         - d
+         - @media (max-width: 375px)
      * logo
        - index.css
-         - d
    
   2. css directory
      - components.css
      - home.css
+       - @media (max-width: 1100px)
+       - @media (max-width: 690px)
+       - @media (max-width: 375px)
      - reset.css
      - style.css
