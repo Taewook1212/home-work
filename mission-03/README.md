@@ -42,8 +42,8 @@
 
 
 <h1>4. CSS</h1>
-
-  <h2>1. components directory</h2>
+<details>
+  1. components directory
      * buttons
        - index.css
      * footer
@@ -52,13 +52,13 @@
          - @media (max-width: 860px)
          - @media (max-width: 550px)
          - @media (max-width: 375px)
-     * header
+     * h eader
        - index.css
          - @media (max-width: 375px)
      * logo
        - index.css
    
-  <h2>2. css directory</h2>
+  2. css directory
      - components.css
      - home.css
        - @media (max-width: 1100px)
@@ -66,3 +66,5 @@
        - @media (max-width: 375px)
      - reset.css
      - style.css
+    
+     </details>
