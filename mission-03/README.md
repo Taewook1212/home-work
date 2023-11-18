@@ -46,16 +46,17 @@
   1. components directory
      * buttons
        - index.css
-        -  d
+         -  .button-container .button-wrapper .button-none  .button .button-bg  .button-bg:hover .button-bg:focus .button-login .button-arrow-elliptical .button-arrow-rectangle .button-select .form-email-desk input.main-email-desk::placeholder,
+.form-email-mobile input.main-email-mobile::placeholder  .form-email-desk .main-email-mobile
      * footer
        - index.css
-        - d
-     * header
+         - d
+     * h eader
        - index.css
-        - d
+         - d
      * logo
        - index.css
-        - d
+         - d
    
   2. css directory
      - components.css
