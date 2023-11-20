@@ -20,7 +20,8 @@
 }
 
 .main-wrapper {
-  width: 50%;
+  /* width: 50%; */
+  max-width: min(75rem, 60%);
   display: flex;
   flex-flow: column nowrap;
   gap: 1.75em;
@@ -37,9 +38,6 @@
 }
 
 .main-subTitle {
-  display: flex;
-  flex-flow: row nowrap;
-
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
@@ -76,7 +74,7 @@
   font-weight: 700;
   line-height: 1.5;
 }
-
+/* 
 @media (max-width: 1100px) {
   .main-wrapper {
     width: 65%;
@@ -133,7 +131,6 @@
   }
 }
 
-/* 모바일 */
 @media (max-width: 375px) {
   .main-container {
     padding: 4.25rem 0 4.375rem 0;
@@ -183,4 +180,4 @@
     line-height: 1.5;
     letter-spacing: -0.008px;
   }
-}
+} */

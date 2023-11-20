@@ -23,7 +23,7 @@
 }
 @media (max-width: 600px) {
   .header-container {
-    padding: 0.625em 1.5625em;
+    padding: 1.25rem 1.5625em;
     gap: 3.5em;
   }
 
@@ -45,40 +45,13 @@
     width: auto;
     height: auto;
   }
+
   .button-select {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: auto;
-    height: auto;
-    color: var(--grayscale-gray);
-    font-size: 0.75rem;
-    font-weight: 400;
-    line-height: 1;
-    /* padding: 0.75em 0.625em; */
-    padding: 0.75em 1em;
-    gap: 0.5em;
-    border: 1px solid var(--grayscale-gray);
-    border-radius: 0.125;
-    background-image: url('/images/sprite/global.svg'),
-      url('/images/sprite/bi_caret-down-fill.svg');
+    height: 30px;
   }
 }
 /* 모바일 */
 @media (max-width: 375px) {
-  .header-container > button-select {
-    display: inline-flex;
-    height: 30px;
-    width: 113px;
-    padding: 12px 10px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 2px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.2;
-  }
-
   .header-wrapper {
     display: flex;
     flex-flow: row nowrap;

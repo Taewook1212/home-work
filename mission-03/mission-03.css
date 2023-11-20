@@ -20,13 +20,15 @@
 }
 
 .main-wrapper {
-  width: 50%;
+  /* width: 50%; */
+  max-width: min(46.875rem, 70%);
   display: flex;
   flex-flow: column nowrap;
   gap: 1.75em;
   align-items: center;
 }
 .main-title {
+  max-width: min(600px);
   display: flex;
   flex-flow: column nowrap;
   font-size: 3.75rem;
@@ -37,9 +39,6 @@
 }
 
 .main-subTitle {
-  display: flex;
-  flex-flow: row nowrap;
-
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5;
@@ -47,7 +46,8 @@
 }
 
 .form-email-desk {
-  width: 100%;
+  width: 700px;
+  /* max-width: 61vw; */
   display: flex;
   flex-flow: row nowrap;
 }
@@ -72,33 +72,29 @@
 }
 
 .main-discription {
+  display: flex;
+  flex-flow: column;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 47.5rem) {
+  .main-container {
+    padding: 4.8125rem 0 6.5rem 0;
+  }
   .main-wrapper {
-    width: 65%;
-  }
-  .main-subTitle {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-}
+    max-width: min(400px, 90%);
 
-@media (max-width: 1100px) {
+    align-items: center;
+  }
   .main-title {
-    flex-flow: column nowrap;
-
-    font-size: 3.125rem;
+    color: var(--white);
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
   }
-}
 
-@media (max-width: 690px) {
-  .main-title {
-    font-size: 2.525rem;
-  }
   .form-email-desk {
     display: none;
   }
@@ -115,69 +111,19 @@
   .button-arrow-rectangle {
     display: flex;
   }
-}
 
-@media (max-width: 690px) {
-  .main-container {
-    padding: 4.25rem 0 4.375rem 0;
-  }
-  .main-wrapper {
-    width: 85%;
-  }
-  .main-title {
-    flex-flow: column nowrap;
-    color: var(--white);
-    font-size: 2.125rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-}
-
-/* 모바일 */
-@media (max-width: 375px) {
-  .main-container {
-    padding: 4.25rem 0 4.375rem 0;
-  }
-  .main-wrapper {
-    width: 85%;
-  }
-  .main-title {
-    flex-flow: column nowrap;
-    color: var(--white);
-    font-size: 2.125rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  .main-subTitle {
+  .main-subTitle span {
+    display: flex;
     flex-flow: column nowrap;
     align-items: center;
+  }
+  .main-subTitle {
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -0.009px;
   }
-
-  .form-email-desk {
-    display: none;
-  }
-  .form-email-mobile {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .button-arrow-elliptical {
-    display: none;
-  }
-  .button-arrow-rectangle {
-    display: flex;
-  }
   .main-discription {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
     font-size: 0.6rem;
     font-weight: 400;
     line-height: 1.5;

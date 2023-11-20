@@ -76,6 +76,32 @@
   letter-spacing: -0.007px;
 }
 
+.select-language {
+  /* border: 1px solid #757575; */
+  display: inline-flex;
+  position: relative;
+  width: 113px;
+  height: 40px;
+  background: var(
+    --gradients-100,
+    linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%)
+  );
+}
+
+.select-language .icon--global,
+.select-language .icon--triangle {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  translate: 0 -50%;
+}
+.select-language .icon--global {
+  left: 0.375em;
+}
+.select-language .icon--triangle {
+  right: 0.375em;
+}
+
 .button-select {
   text-align: center;
   width: 113px;
@@ -89,8 +115,8 @@
 
   border: 1px solid var(--grayscale-gray);
   border-radius: 0.125;
-  background: url('/images/sprite/global.svg') 5px 50% no-repeat,
-    url('/images/sprite/bi_caret-down-fill.svg') 95% 50% no-repeat;
+  /* background: url('/images/sprite/global.svg') 5px 50% no-repeat,
+    url('/images/sprite/bi_caret-down-fill.svg') 95% 50% no-repeat; */
 }
 
 .form-email-desk input.main-email-desk::placeholder,
